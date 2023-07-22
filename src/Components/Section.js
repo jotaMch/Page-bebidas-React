@@ -14,7 +14,7 @@ return (
                         <img src="https://img.freepik.com/fotos-gratis/copo-de-vinho-tinto-no-balcao-de-bar_107420-65844.jpg?w=740&t=st=1689465040~exp=1689465640~hmac=260a2d848326d98fa7de5f2ba990dbe0df7e945f43c3340274bb709a6f8dbe7a" alt="vinho" />
                         <p>
                         Alsácia: São principalmente brancos, 
-                        como Riesling e são conhecidos por sua pureza
+                        como Riesling. São conhecidos por sua pureza.
                         </p>
                     </li>
                     <li>

@@ -9,7 +9,8 @@
   padding: 40px 0;
   background-color: blueviolet;
   height: 660px;
-  background-image: url(https://img.freepik.com/fotos-gratis/copo-de-uisque-em-uma-mesa-rodeada-de-fumaca-contra-um-fundo-preto_181624-5701.jpg?w=1060&t=st=1689203722~exp=1689204322~hmac=7ac4ab27af27a0c47e886c37eb855acebf66f5a923898573a4afb0c23a9deb83);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(227, 50, 6, 0.362)),
+  url(https://img.freepik.com/fotos-gratis/copo-de-uisque-em-uma-mesa-rodeada-de-fumaca-contra-um-fundo-preto_181624-5701.jpg?w=1060&t=st=1689203722~exp=1689204322~hmac=7ac4ab27af27a0c47e886c37eb855acebf66f5a923898573a4afb0c23a9deb83);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -179,7 +180,7 @@ section p {
 /*----------------section em destaque------------------*/
 
 .container {
-  background-color: #222;
+  background-image: linear-gradient(to top, #141414, #363636, #141414 );
 }
 
 .sobre,
@@ -506,6 +507,148 @@ footer {
     margin-top: 16px;
     width: 90%;
     height: 300px;
+  }
+
+  .catalogo-flex aside {
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2%;
+    margin: 8px 0 20px;
+  }
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+/* ---------------tablet ------------------*/
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .sobre-nos,
+  .catalogo h2 {
+    width: 90%;
+  }
+  
+  .center {
+    position: absolute;
+    bottom: 16%;
+  }
+
+  .main {
+    background-position: top right;
+  }
+
+  .menu {
+    width: 90%;
+    left: 50%;
+    translate: -50%;
+    z-index: 1;
+  }
+
+  .app {
+    width: 100%;
+  }
+
+  .form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+
+  .form input {
+    width: 100%;
+  }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  
+  .catalogo-flex {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .catalogo-flex ul {
+    width: 100%;
+  }
+  
+  .catalogo-flex .listOne {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 4%;
+    row-gap: 1%;
+  }
+
+  .listOne li {
+    width: 100%;
+  }
+
+  .catalogo-flex img {
+    width: 100%;
+  }
+
+  .catalogo-flex aside {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .destaque {
+    width: 94%;
+  }
+
+  .destaque ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .destaque ul li {
+    width: 90%;
+    margin: 0 auto 14px;
+  }
+
+  .destaque li p {
+    font-size: 12px;
+  }
+
+  .promocoes {
+    width: 94%;
+  }
+
+  .promocoes ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .promocoes li {
+    margin-top: 16px;
+    width: 90%;
+    height: 400px;
   }
 
   .catalogo-flex aside {
