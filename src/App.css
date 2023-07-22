@@ -22,7 +22,8 @@
 }
 
 .menu {
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,6 +33,7 @@
   background-color: rgba(0,0,0,0.9);
   padding: 12px;
   border-radius: 12px;
+  z-index: 998;
 }
 
 
@@ -217,13 +219,15 @@ section p {
   margin-top: 18px;
 }
 
-/*-----------Destaque-------------*/
+/*-----------Destaque e promoções-------------*/
 
-.destaque h2 {
+.destaque,
+.promocoes h2 {
   color: #f34e01;
 }
 
-.destaque ul {
+.destaque ul,
+.promocoes ul {
   display: flex;
   justify-content: space-around;
   margin-top: 14px;
@@ -235,14 +239,49 @@ section p {
   color: White;
   width: 220px;
   list-style-type: none;
+  transition: transform 0.5s;
 }
 
-.destaque li p {
+.promocoes {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0 100px;
+}
+
+.promocoes li {
+  position: relative;
+  border: 2px solid #f34e01;
+  border-radius: 10px;
+  color: White;
+  width: 40%;
+  height: 300px;
+  list-style-type: none;
+  transition: transform 0.5s;
+}
+
+.promocoes li .free {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+}
+
+.destaque li:hover,
+.promocoes li:hover {
+  background-color: #f34e01;
+  transform: scale(0.98);
+}
+
+.destaque li p,
+.promocoes li p {
   padding: 0 6px 2px;
 }
 
-.destaque img {
+.destaque img,
+.promocoes img {
   width: 100%;
+  height: 80%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -302,52 +341,36 @@ section p {
   margin-bottom: 16px;
 }
 
+.listOne li:hover {
+  color: #f34e01;
+}
+
+
 .catalogo-flex img {
   width: 100%;
   height: 200px;
 }
 
 
-/*----------------contato-----------------*/
 
-.contato {
-  background-color: #222;
+/*----------------imagens item-----------------*/
+
+.item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 200px;
 }
 
-.contato-info {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 100px 0;
+.icon-items {
+  max-width: 34px;
+  transition: transform 0.5s;
 }
 
-.contato-info h2 {
-  color: #f34e01;
+.icon-items:hover {
+  transform: scale(1.4);
+  cursor: pointer;
 }
 
-
-.contato-info form {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-}
-
-.contato-info form label {
-  margin: 10px 0 6px;
-  color: #fff;
-}
-
-.contato-info form textarea {
-  resize: none;
-  height: 72px;
-  margin-bottom: 16px;
-}
-
-.contato-info img {
-  width: 600px;
-}
 
 /*-----------footer-------------*/
 
@@ -356,7 +379,9 @@ footer {
   color: #f34e01;
   padding: 12px;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -381,9 +406,9 @@ footer {
   }
 
   .menu {
-    max-width: 360px;
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    left: 50%;
+    translate: -50%;
     z-index: 1;
   }
 
@@ -392,8 +417,19 @@ footer {
   }
 
   .form {
-    width: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed; /* Ou "position: absolute" se for o comportamento desejado */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 12px;
+    border-radius: 4px;
   }
+  
 
   .form input {
     width: 100%;
@@ -451,12 +487,38 @@ footer {
     margin: 0 auto 14px;
   }
 
+  .destaque li p {
+    font-size: 12px;
+  }
+
+  .promocoes {
+    width: 94%;
+  }
+
+  .promocoes ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .promocoes li {
+    margin-top: 16px;
+    width: 90%;
+    height: 300px;
+  }
+
   .catalogo-flex aside {
     width: 97%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 2%;
     margin: 8px 0 20px;
+  }
+
+  .footer {
+    justify-content: center;
+    align-items: center;
   }
 
 }

@@ -1,30 +1,32 @@
 import React from "react";
+import socialLinks from './assets/social-links/index';
 
 
 function Contato() {
     return(
         <div>
-            <div className="contato">
-            <div className="contato-info">
-                <div>
-                    <h2>Entre em contato</h2>
-                </div>
-                <form>
-                    <label htmlFor="nome">Nome :</label>
-                    <input type="text" id="nome" name="nome" />
-                    <label htmlFor="numero">Numero (whatsapp):</label>
-                    <input typeof="number" name="numero" id="numero" />
-                    <label htmlFor="mensagem">Mensagem:</label>
-                    <textarea htmlFor="mensagem" id="mensagem" name="mensagem" />
-                    <button type="submit" >Enviar</button>
-                </form>
-            </div>
-        </div>
         
             <footer >
                 <p>
                     &copy; Desenvolvido por Jânderson - Todos os direitos reservados.
                 </p>
+                <div className="item">
+                    <a>
+                        <img className="icon-items" src={socialLinks.instagramIcon} alt="instagram-new" />
+                    </a>
+
+                    <a>
+                        <img className="icon-items" src={socialLinks.iconTwiter} alt="twiter" />
+                    </a>
+
+                    <a>
+                        <img className="icon-items" src={socialLinks.iconEmail} alt="e-mail" />
+                    </a>
+
+                    <a>
+                        <img className="icon-items" src={socialLinks.iconWpp} alt="whatsapp" />
+                    </a>
+                </div>
             </footer>
         </div>
     )

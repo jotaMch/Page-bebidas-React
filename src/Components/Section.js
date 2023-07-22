@@ -1,4 +1,5 @@
 import React from "react";
+import socialLinks from './assets/social-links/index';
 
 function Produto() {
 
@@ -37,6 +38,26 @@ return (
                         envelhecidos em barris.
                         </p>
                     </li>
+                </ul>
+            </nav>
+            <nav className="promocoes">
+                <h2>Promoções</h2>
+                <ul>
+                    <li>
+                        <img src="https://img.freepik.com/fotos-gratis/coqueteis-frescos-com-limao-gelado-e-ia-generativa-de-frutas_188544-12370.jpg?w=1380&t=st=1689985754~exp=1689986354~hmac=f96a74e2283ba3ea7397d25537a028cea07c4fab2b80b08f2f4d6350e5059bb6" alt="promocoes-drink" />
+                        <img className="free" src={socialLinks.free} alt="gratis" />
+                        <p>
+                        Na compra de 6 drinks, você ganha um gratis de sua preferência!
+                        </p>
+                    </li>
+                    <li>
+                        <img src="https://img.freepik.com/fotos-gratis/vista-frontal-diferentes-bebidas-coloridas-dentro-de-garrafas_140725-14407.jpg?w=1060&t=st=1689985775~exp=1689986375~hmac=a3c6ec7ec9834a7783c69919751c01fc5b220b58e99c9c506e248656cfd8127f" alt="promocoes-drink" />
+                        <img className="free" src={socialLinks.free} alt="gratis" />
+                        <p>
+                        Na compra de 6 drinks, você ganha uma garrafa gratis!
+                        </p>
+                    </li>
+                    
                 </ul>
             </nav>
         </div>
