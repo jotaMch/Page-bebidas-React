@@ -31,6 +31,7 @@ class Valida extends React.Component {
         this.setState({ showError: false });
 
         this.setState({ success: true });
+
         } else {
         confirmPasswordInput.style.border = "1px solid red";
         PasswordInput.style.border = "1px solid red";
