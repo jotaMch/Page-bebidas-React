@@ -10,10 +10,17 @@
   background-color: blueviolet;
   height: 660px;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(227, 50, 6, 0.362)),
-  url(https://img.freepik.com/fotos-gratis/copo-de-uisque-em-uma-mesa-rodeada-de-fumaca-contra-um-fundo-preto_181624-5701.jpg?w=1060&t=st=1689203722~exp=1689204322~hmac=7ac4ab27af27a0c47e886c37eb855acebf66f5a923898573a4afb0c23a9deb83);
+  url(./Components/assets/bebidas/principal.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.resumo {
+  width: 420px;
+  background-color: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 4px;
 }
 
 .center {

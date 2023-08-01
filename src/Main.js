@@ -49,11 +49,12 @@ return (
             </form>
         </div>
         <section>
-            <h3>Explore nossa ampla variedade de vinhos, destilados e cervejas artesanais.</h3>
-            <p>
-            Surpreenda-se com a qualidade dos nossos produtos e a diversidade de marcas renomadas. 
-            
-            </p>
+            <div className="resumo">
+                <h3>Explore nossa ampla variedade de vinhos, destilados e cervejas artesanais.</h3>
+                <p>
+                    Surpreenda-se com a qualidade dos nossos produtos e a diversidade de marcas renomadas. 
+                </p>
+            </div>
         </section>
     </div>
 </div>

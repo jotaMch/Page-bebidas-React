@@ -1,5 +1,4 @@
 import React from "react";
-import "../";
 
 class Valida extends React.Component {
     constructor(props) {

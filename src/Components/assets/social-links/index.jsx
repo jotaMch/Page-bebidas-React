@@ -6,7 +6,7 @@ import iconWpp from './icons8-whatsapp (1).svg';
 import iconEmail from './icons8-gmail-32.svg';
 import free from './icons8-um-gratis-50.png';
 
-const socialLinks = {
+const SocialLinks = {
   instagramIcon,
   iconTwiter,
   iconWpp,
@@ -14,4 +14,4 @@ const socialLinks = {
   free,
 };
 
-export default socialLinks;
+export default SocialLinks;
